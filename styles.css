@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    /* COLORS */
+  --first-color: #F9F7F3;
+  --second-color: #1D3461;
+  --text-color: #C17F37;
+  
+   /* TOPOGRAPHY */
+  --body-font: 'Outfit', sans-serif;
+  --big-fonts-size: 2rem;
+  --h2-font-size: 1.27rem;
+  --normal-font-size: 0.938rem;
+  --smaller-font-size: 0.75rem;
+  
+  --mg-2: 1rem;
+  --mg-4: 2rem;
+  --mg-5: 2.5rem;
+  --mg-6: 3rem;
+}
