@@ -5,6 +5,8 @@
   --first-color: #F9F7F3;
   --second-color: #1D3461;
   --text-color: #C17F37;
+  --white-head: #ffffff;
+  --accent-color: #2a4a8a;
   
    /* TOPOGRAPHY */
   --body-font: 'Outfit', sans-serif;
@@ -14,7 +16,105 @@
   --smaller-font-size: 0.75rem;
   
   --mg-2: 1rem;
+  --mg-3: 1.5rem;
   --mg-4: 2rem;
   --mg-5: 2.5rem;
   --mg-6: 3rem;
+  
+  font-family: "Libre Baskerville", sans-serif;
+}
+
+
+.header {
+  max-width: 100%;
+  height: auto;
+  background-color: var(--first-color);
+  padding: var(--mg-3);
+  border: 2px solid red;
+  /*display: flex;*/
+}
+
+.nav_grid {
+  display: flex;
+  
+}
+
+.logo_name {
+  
+}
+
+.logo_name a {
+  font-size: var(--h2-font-size);
+  color: var(--second-color);
+  text-decoration: none;
+}
+
+
+.hamburger {
+  display: flex;
+  border: 2px solid red;
+}
+
+
+
+/*==== WELCOME SECTION ====*/
+.welcome {
+  background-color: var(--second-color);
+  padding: var(--mg-4);
+}
+
+.my_intro h1 {
+  font-size: 2.3rem;
+  color: var(--white-head);
+  max-width: 12rem;
+  width: 100%;
+  line-height: 1.1;
+}
+
+.my_intro span {
+  font-family: "DM Mono", Outfit;
+  color: var(--text-color);
+}
+
+
+.my_intro p {
+  font-family: 'Outfit', Sans-Serif;
+  font-size: var(--mg-2);
+  color: var(--first-color);
+  line-height: 1.5;
+  margin-bottom: var(--mg-5);
+}
+
+
+.button {
+  font-family: 'Outfit', Sans-Serif;
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+  background-color: var(--accent-color);
+  color: var(--white-head);
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--first-color);
+  border-radius: 0.4375rem;
+}
+
+
+/*==== BIOGRAPHY SECTION ====*/
+.biography {
+  background-color: var(--first-color);
+  padding: var(--mg-4);
+}
+
+
+.my_bio h2 {
+  font-size: 1.5rem;
+  color: var(--second-color);
+  line-height: 1.1;
+}
+
+.my_bio p {
+  font-family: 'Outfit', Sans-Serif;
+  font-size: var(--mg-2);
+  color: #3D3D3D;
+  line-height: 1.5;
+  margin-bottom: var(--mg-5);
 }
