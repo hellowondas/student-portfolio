@@ -7,9 +7,10 @@
   --text-color: #C17F37;
   --white-head: #ffffff;
   --accent-color: #2a4a8a;
+  --body-color: #3D3D3D;
   
    /* TOPOGRAPHY */
-  --body-font: 'Outfit', sans-serif;
+  --body-font: "Outfit", sans-serif;
   --big-fonts-size: 2rem;
   --h2-font-size: 1.27rem;
   --normal-font-size: 0.938rem;
@@ -21,7 +22,7 @@
   --mg-5: 2.5rem;
   --mg-6: 3rem;
   
-  font-family: "Libre Baskerville", sans-serif;
+  /*font-family: "Libre Baskerville", sans-serif;*/
 }
 
 
@@ -30,20 +31,19 @@
   height: auto;
   background-color: var(--first-color);
   padding: var(--mg-3);
-  border: 2px solid red;
-  /*display: flex;*/
 }
+
 
 .nav_grid {
   display: flex;
-  
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.logo_name {
-  
-}
 
 .logo_name a {
+  font-family: "Libre Baskerville";
+  font-weight: 700;
   font-size: var(--h2-font-size);
   color: var(--second-color);
   text-decoration: none;
@@ -51,8 +51,7 @@
 
 
 .hamburger {
-  display: flex;
-  border: 2px solid red;
+  transform: scale(1.2);
 }
 
 
@@ -64,6 +63,7 @@
 }
 
 .my_intro h1 {
+  font-family: "Libre Baskerville", sans-serif;
   font-size: 2.3rem;
   color: var(--white-head);
   max-width: 12rem;
@@ -71,14 +71,16 @@
   line-height: 1.1;
 }
 
+
 .my_intro span {
-  font-family: "DM Mono", Outfit;
+  font-family: "Libre Baskerville", sans-serif;
+  font-style: italic;
   color: var(--text-color);
 }
 
 
 .my_intro p {
-  font-family: 'Outfit', Sans-Serif;
+  font-family: var(--body-font);
   font-size: var(--mg-2);
   color: var(--first-color);
   line-height: 1.5;
@@ -87,7 +89,7 @@
 
 
 .button {
-  font-family: 'Outfit', Sans-Serif;
+  font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 500;
   background-color: var(--accent-color);
@@ -106,15 +108,52 @@
 
 
 .my_bio h2 {
+  font-family: "Libre Baskerville", sans-serif;
   font-size: 1.5rem;
   color: var(--second-color);
   line-height: 1.1;
 }
 
+
 .my_bio p {
-  font-family: 'Outfit', Sans-Serif;
+  font-family: var(--body-font);
   font-size: var(--mg-2);
-  color: #3D3D3D;
+  color: var(--body-color);
   line-height: 1.5;
   margin-bottom: var(--mg-5);
 }
+
+
+/*==== FOOTER SECTION ====*/
+.pages {
+  font-family: var(--body-font);
+  background-color: var(--second-color);
+  padding: var(--mg-4);
+}
+
+
+.my_footer h3 {
+  font-family: "DM Mono", Outfit;
+  text-transform: uppercase;
+  font-size: var(--normal-font-size);
+  color: var(--first-color);
+  letter-spacing: 0.125rem;
+}
+
+
+.page_list {
+  list-style-type: none;
+  color: var(--first-color);
+  padding-left: 0;
+  margin-left: 0;
+  line-height: 1.8;
+}
+
+
+.sc_links h4 {
+  font-family: "DM Mono", Outfit;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.06875rem;
+}
+
