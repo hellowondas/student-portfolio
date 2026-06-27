@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap');
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border;
+}
+
+
 :root {
     /* COLORS */
   --first-color: #F9F7F3;
@@ -21,8 +29,6 @@
   --mg-4: 2rem;
   --mg-5: 2.5rem;
   --mg-6: 3rem;
-  
-  /*font-family: "Libre Baskerville", sans-serif;*/
 }
 
 
@@ -37,7 +43,16 @@
 .nav_grid {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  height: 3.125rem;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 16px;
+  z-index: 1000;
+  background-color: #ffff;
 }
 
 
@@ -83,10 +98,12 @@
   font-family: var(--body-font);
   font-size: var(--mg-2);
   color: var(--first-color);
-  line-height: 1.5;
-  margin-bottom: var(--mg-5);
+  line-height: 1.5rem;
+  margin-top: 1.875rem;
 }
 
+
+.btn-wrapper { margin-top: 50px; }
 
 .button {
   font-family: var(--body-font);
@@ -120,7 +137,7 @@
   font-size: var(--mg-2);
   color: var(--body-color);
   line-height: 1.5;
-  margin-bottom: var(--mg-5);
+  margin: 1rem 0 1rem 0;
 }
 
 
@@ -145,7 +162,7 @@
   list-style-type: none;
   color: var(--first-color);
   padding-left: 0;
-  margin-left: 0;
+  margin: 1.25rem 0 1.875rem 0;
   line-height: 1.8;
 }
 
