@@ -65,8 +65,42 @@
 }
 
 
+.nav_bar {
+  background: var(--first-color);
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 2rem;
+  
+  position: fixed;
+  max-width: 320px;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  /*transform: translateX(100%);
+  transition: transition 0.3s ease;*/
+}
+
+
+.nav_bar li {
+  font-family: "DM Mono", sans-serif;
+  font-size: var(--mg-3);
+  display: flex;
+  margin: 20px auto;
+  
+}
+
+.nav_bar a {
+  text-decoration: none;
+  color: var(--second-color);
+}
+
+
+
+
 .hamburger {
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 
 
