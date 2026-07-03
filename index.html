@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Samuel's Portfolio - Frontend developer">
+  <meta name="description" content="Portfolio of Samuel Shielu, a frontend developer and software engineering student showcasing projects and academic work.">
   <title>Samuel | Portfolio</title>
   
   <link rel="stylesheet" href="styles.css">
@@ -12,7 +12,7 @@
 </head>
 <body>
   <header class="header">
-    <nav class="nav_grid">
+    <nav class="nav_grid" aria-label="main navigation">
       <div class="logo_name">
         <a href="index.html">Samuel.Shielu</a>
       </div>
@@ -25,9 +25,9 @@
         <li><a href="projects.html">Contact</a></li>
       </ul> -->
 
-      <div class="hamburger">
+      <button class="hamburger" aria-label="Open navigation menu">
         <i class="bx bx-menu"></i>
-      </div>
+      </button>
     </nav>
     
   </header>
@@ -46,7 +46,7 @@
   
     <section class="biography">
       <div class="img_frame">
-        <img src="assets/images/profile_use.png" alt="Profile Image">
+        <img src="assets/images/profile_use.png" alt="Portrait of Samuel Shielu">
       </div>
       
       <div class="my_bio">
@@ -54,7 +54,6 @@
         <p>I am a Software Engineering student at Miva Open University, passionate about artificial intelligence and software development. Originally from Edo State, I combine creativity with a meticulous eye for detail. I strive to create technology that is both functional and deeply human.</p>
       </div>
     </section>
-    
   </main>
   
   <footer class="pages">
@@ -68,19 +67,13 @@
         <li>Contact</li>
       </ul>
     </div>
-    
-    <!-- <div class="sc_links">
-      <a>github</a>
-      <a>linkeldn</a>
-      <a>twitter</a>
-    </div> -->
-    
+
     <div class="wrap_socials">
       <h4>Connect</h4>
       <div class="in_socials">
-        <a href="https://github.com/hellowondas" target="_blank" aria-label="github">
+        <a href="https://github.com/hellowondas" target="_blank" rel="noopener noreferrer" aria-label="Visit my github profile">
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
 	        <path d="M0 0h24v24H0z" fill="none" />
 	        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
 		      <path d="M3.5 15.668q.675.081 1 .618c.326.537 1.537 2.526 2.913 2.526H9.5m5.672-3.513q.823 1.078.823 1.936V21m-5.625-5.609q-.87.954-.869 1.813V21" />
@@ -88,24 +81,28 @@
         </svg>
       </a>
       
-      <a href="https://linkeldn.com" target="_blank" aria-label="linkeldn">
+      <a href="https://linkedn.com" target="_blank" rel="noopener noreferrer" aria-label="visit my linkedn profile">
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
 	      <path d="M0 0h24v24H0z" fill="none" />
 	      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
 		    <circle cx="4" cy="4" r="2" />
 		    <path d="M2 9h4v12H2Zm20 12h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 12 0Z" /></g>
         </svg>
       </a>
-      
-      <a href="https://twitter.com" target="_blank" aria-label="twitter">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Visit my twitter profile">
+
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
 	      <path d="M0 0h24v24H0z" fill="none" />
 	      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 4.85c-.9.443-1.782.623-2.7.896c-1.009-1.145-2.505-1.208-3.942-.667C12.427 5.806 12 7.529 12 9.364c-2.92.075-5.521-1.262-7.2-3.618c0 0-3.764 6.723 3.6 9.95c-1.685 1.127-3.365 1.888-5.4 1.808c2.977 1.631 6.222 2.192 9.03 1.372c4.63-1.351 7.36-5.722 7.334-10.397c0-.225 1.359-2.506 1.636-3.629" />
         </svg>
       </a>
       </div>
-
+    </div>
+    
+    <div class="author">
+      <span> &copy; 2026 &middot Hellowondas</span>
     </div>
   </footer>
   <script src="main.js"></script>

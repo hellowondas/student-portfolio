@@ -4,20 +4,20 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border;
+  box-sizing: border-box;
 }
 
 
 :root {
-    /* COLORS */
+    /*=== COLORS ===*/
   --first-color: #F9F7F3;
   --second-color: #1D3461;
   --text-color: #C17F37;
   --white-head: #ffffff;
-  --accent-color: #2a4a8a;
+  --btn-color: #FFFFFF14;
   --body-color: #3D3D3D;
   
-   /* TOPOGRAPHY */
+   /*=== TOPOGRAPHY ===*/
   --body-font: "Outfit", sans-serif;
   --big-fonts-size: 2rem;
   --h2-font-size: 1.27rem;
@@ -31,7 +31,7 @@
   --mg-6: 3rem;
 }
 
-
+/*==== HEADER SECTION ====*/
 .header {
   max-width: 100%;
   height: auto;
@@ -50,9 +50,9 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 0 16px;
+  padding: 0 1rem;
   z-index: 1000;
-  background-color: #ffff;
+  background-color: var(--white-head);
 }
 
 
@@ -73,7 +73,7 @@
   padding: 2rem;
   
   position: fixed;
-  max-width: 320px;
+  max-width: 20rem;
   width: 50%;
   height: 100%;
   top: 0;
@@ -87,16 +87,14 @@
   font-family: "DM Mono", sans-serif;
   font-size: var(--mg-3);
   display: flex;
-  margin: 20px auto;
-  
+  margin: 1.25rem auto;
 }
+
 
 .nav_bar a {
   text-decoration: none;
   color: var(--second-color);
 }
-
-
 
 
 .hamburger {
@@ -137,13 +135,13 @@
 }
 
 
-.btn-wrapper { margin-top: 50px; }
+.btn-wrapper { margin-top: 3.125rem; }
 
 .button {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 500;
-  background-color:rgba(255,255,255,0.08);
+  background-color: var(--btn-color);
   color: var(--white-head);
   padding: 0.8rem 1.5rem;
   border: 1px solid var(--first-color);
@@ -152,11 +150,16 @@
 }
 
 
+.button:hover {
+  background-color: var(--text-color);
+  color: var(--second-color);
+}
+
+
 /*==== BIOGRAPHY SECTION ====*/
 .img_frame {
-  background-color: red;
   width: 100%;
-  max-width: 250px;
+  max-width: 15.625rem;
   aspect-ratio: 1;
   overflow: hidden;
   margin: 0 auto;
@@ -236,7 +239,31 @@
 }
 
 .in_socials a {
-  background-color: rgba(255,255,255,0.08);
+  background-color: var(--btn-color);
   color: var(--first-color);
-  margin-top: 15px;
+  height: clamp(2.5rem, 6vw, 3rem);
+  width: clamp(2.5rem, 6vw, 3rem);
+  font-size: clamp(1.2rem, 4vw, 1.4rem);
+  margin-top: 0.9375rem;
+  border-radius: 50%;
+  text-decoration: none;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.in_socials a:hover{
+  background-color: var(--text-color);
+  color: var(--second-color);
+}
+
+
+.author {
+  font-family: "DM Mono", Outfit;
+  font-size: var(--normal-font-size);
+  color: var(--first-color);
+  text-align: center;
+  margin-top: var(--mg-4);
 }
