@@ -143,15 +143,35 @@
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 500;
-  background-color: var(--accent-color);
+  background-color:rgba(255,255,255,0.08);
   color: var(--white-head);
   padding: 0.8rem 1.5rem;
   border: 1px solid var(--first-color);
   border-radius: 0.4375rem;
+  text-decoration: none;
 }
 
 
 /*==== BIOGRAPHY SECTION ====*/
+.img_frame {
+  background-color: red;
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid var(--second-color);
+}
+
+.img_frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
 .biography {
   background-color: var(--first-color);
   padding: var(--mg-4);
@@ -163,6 +183,7 @@
   font-size: 1.5rem;
   color: var(--second-color);
   line-height: 1.1;
+  margin-top: var(--mg-4);
 }
 
 
@@ -201,10 +222,21 @@
 }
 
 
-.sc_links h4 {
+.wrap_socials h4 {
   font-family: "DM Mono", Outfit;
   color: var(--text-color);
   text-transform: uppercase;
   letter-spacing: 0.06875rem;
 }
 
+
+.in_socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.in_socials a {
+  background-color: rgba(255,255,255,0.08);
+  color: var(--first-color);
+  margin-top: 15px;
+}
