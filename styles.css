@@ -13,9 +13,11 @@
   --first-color: #F9F7F3;
   --second-color: #1D3461;
   --text-color: #C17F37;
-  --white-head: #ffffff;
+  --white-head: #FFFFFF;
   --btn-color: #FFFFFF14;
   --body-color: #3D3D3D;
+  --border-color: #E3DED4;
+  --second-bg: #EEECE6;
   
    /*=== TOPOGRAPHY ===*/
   --body-font: "Outfit", sans-serif;
@@ -104,12 +106,18 @@
 
 
 /*==== WELCOME SECTION ====*/
-.welcome {
+.welcome, 
+.welcome1 {
   background-color: var(--second-color);
   padding: var(--mg-4);
 }
 
-.my_intro h1 {
+  
+  
+  
+  
+.my_intro h1, 
+.my_intro1 h1 {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 2.3rem;
   color: var(--white-head);
@@ -126,7 +134,8 @@
 }
 
 
-.my_intro p {
+.my_intro p,
+.my_intro1 p {
   font-family: var(--body-font);
   font-size: var(--mg-2);
   color: var(--first-color);
@@ -175,20 +184,44 @@
 }
 
 
-.biography {
+.biography, 
+.know_me {
   background-color: var(--first-color);
   padding: var(--mg-4);
 }
 
 
+.my_bio h2,
+.edu_bgrd h2 {
+  color: var(--second-color);
+  line-height: 1.1;
+  font-family: "Libre Baskerville";
+}
+
 .my_bio h2 {
+  font-size: 1.5rem;
+  margin-top: var(--mg-4);
+}
+
+.edu_bgrd h2 {
+  font-size: 1.8rem;
+  margin-top: var(--mg-2);
+}
+/*original code my_bio h2 {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 1.5rem;
   color: var(--second-color);
   line-height: 1.1;
   margin-top: var(--mg-4);
 }
-
+.edu_bgrd h2 { 
+  
+  font-size: 1.8rem; 
+  color: var(--second-color);
+  margin-top: var(--mg-2);
+  line-height: 1.1;
+  font-family: "Libre Baskerville";
+} */
 
 .my_bio p {
   font-family: var(--body-font);
@@ -218,11 +251,15 @@
 
 .page_list {
   list-style-type: none;
-  color: var(--first-color);
+  
   padding-left: 0;
   margin: 1.25rem 0 1.875rem 0;
   line-height: 1.8;
 }
+
+
+.page_list a { text-decoration: none; color: var(--first-color); }
+.page_list a:hover {color: var(--text-color);}
 
 
 .wrap_socials h4 {
@@ -266,4 +303,56 @@
   color: var(--first-color);
   text-align: center;
   margin-top: var(--mg-4);
+}
+
+
+/*==== ABOUT.HTML PAGE ====*/
+/*.my_intro1 {
+  color: var(--second-color);
+}*/
+
+
+/* ==== EDU BACKGROUND ==== */
+.timeline {
+  list-style: none;
+  position: relative;
+  padding-left: 1.5rem;
+  margin-top: var(--mg-4);
+}
+.timeline::before {
+  content: "";
+  background-color: var(--border-color);
+  position: absolute;
+  top: 0.375rem;
+  bottom: 0.375rem;
+  left: 0.375rem;
+  width: 0.125rem;
+}
+
+
+.timeline_item {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.timeline_dot {
+  background-color: var(--first-color);
+  border: 2px solid red;
+  position: absolute;
+  top: 0.75rem;
+  left: -1.5rem;
+  height: 0.875rem;
+  width: 0.875rem;
+  border-radius: 50%;
+}
+
+
+.timeline_item.is_current .timeline_dot {
+  background-color: var(--text-color);
+  border-color: var(--text-color);
+}
+.timeline_card {
+  background-color: var(--second-bg);
+  padding: 20px;
+  line-height: 2;
+  border-radius: 10px;
 }
