@@ -189,10 +189,13 @@
   background-color: var(--first-color);
   padding: var(--mg-4);
 }
+.my_skills { background: var(--second-bg); padding: var(--mg-4); }
+
 
 
 .my_bio h2,
-.edu_bgrd h2 {
+.edu_bg h2,
+.tech_skills h3 {
   color: var(--second-color);
   line-height: 1.1;
   font-family: "Libre Baskerville";
@@ -203,7 +206,7 @@
   margin-top: var(--mg-4);
 }
 
-.edu_bgrd h2 {
+.edu_bg h2 {
   font-size: 1.8rem;
   margin-top: var(--mg-2);
 }
@@ -251,7 +254,6 @@
 
 .page_list {
   list-style-type: none;
-  
   padding-left: 0;
   margin: 1.25rem 0 1.875rem 0;
   line-height: 1.8;
@@ -336,7 +338,7 @@
 }
 .timeline_dot {
   background-color: var(--first-color);
-  border: 2px solid red;
+  border: 2px solid var(--border-color);
   position: absolute;
   top: 0.75rem;
   left: -1.5rem;
@@ -352,7 +354,36 @@
 }
 .timeline_card {
   background-color: var(--second-bg);
+  font-family: var(--body-font);
   padding: 20px;
-  line-height: 2;
+  line-height: 1.8;
   border-radius: 10px;
 }
+
+.timeline_meta .mono {
+  font-family: "DM Mono", sans-serif;
+  font-size: var(--smaller-font-size);
+  color: var(--body-color);
+}
+.timeline_meta .tag {
+  background-color: rgba(193,127,55,0.15);
+  color: var(--text-color);
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.7rem;
+  font-family: "DM Mono";
+  margin-left: 0.37rem;
+}
+
+
+.timeline_card h3 {
+  font-weight: 700;
+  font-size: 1.06rem;
+}
+
+
+.timeline_sub {
+  color: var(--second-color);
+  font-weight: 600;
+}
+.timeline_sub + p { line-height: 1.5; }
