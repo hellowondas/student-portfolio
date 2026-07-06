@@ -206,7 +206,8 @@
   margin-top: var(--mg-4);
 }
 
-.edu_bg h2 {
+.edu_bg h2,
+.tech_skills h3 {
   font-size: 1.8rem;
   margin-top: var(--mg-2);
 }
@@ -309,12 +310,9 @@
 
 
 /*==== ABOUT.HTML PAGE ====*/
-/*.my_intro1 {
-  color: var(--second-color);
-}*/
+/*.my_intro1 
 
-
-/* ==== EDU BACKGROUND ==== */
+/*==== EDU BACKGROUND ====*/
 .timeline {
   list-style: none;
   position: relative;
@@ -387,3 +385,34 @@
   font-weight: 600;
 }
 .timeline_sub + p { line-height: 1.5; }
+
+
+/*==== TECH SKILLS ====*/
+.the_skills {
+  display: grid;
+  list-style: none;
+  gap: 5rem;
+  margin-top: var(--mg-3);
+}
+
+.skill_row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.skill_pct {
+  margin-left: auto;
+  font-family: "DM Mono";
+  color: var(--body-color);
+} 
+
+.skill_name {
+  color: #111;
+  font-weight: 600;
+  font-size: 1.24;
+  font-family: "DM Mono", sans-serif;
+  letter-spacing: 0.6px;
+}
