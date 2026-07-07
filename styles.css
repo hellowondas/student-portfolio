@@ -391,7 +391,7 @@
 .the_skills {
   display: grid;
   list-style: none;
-  gap: 5rem;
+  gap: 3rem;
   margin-top: var(--mg-3);
 }
 
@@ -399,7 +399,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 1rem;
+  
+  position: relative;
 }
 
 
@@ -415,4 +416,25 @@
   font-size: 1.24;
   font-family: "DM Mono", sans-serif;
   letter-spacing: 0.6px;
+}
+
+
+
+.skill_prg {
+  background-color: var(--border-color);
+  height: 8px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 999px;
+  
+  position: absolute;
+  bottom: -25px;
+}
+
+
+.skill_fill {
+  background-color: var(--text-color);
+  width: var(--pct, 0%);
+  height: 100%;
+  border-radius: 999px;
 }
