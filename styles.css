@@ -211,21 +211,7 @@
   font-size: 1.8rem;
   margin-top: var(--mg-2);
 }
-/*original code my_bio h2 {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 1.5rem;
-  color: var(--second-color);
-  line-height: 1.1;
-  margin-top: var(--mg-4);
-}
-.edu_bgrd h2 { 
-  
-  font-size: 1.8rem; 
-  color: var(--second-color);
-  margin-top: var(--mg-2);
-  line-height: 1.1;
-  font-family: "Libre Baskerville";
-} */
+
 
 .my_bio p {
   font-family: var(--body-font);
@@ -310,7 +296,6 @@
 
 
 /*==== ABOUT.HTML PAGE ====*/
-/*.my_intro1 
 
 /*==== EDU BACKGROUND ====*/
 .timeline {
@@ -419,7 +404,6 @@
 }
 
 
-
 .skill_prg {
   background-color: var(--border-color);
   height: 8px;
@@ -428,7 +412,7 @@
   border-radius: 999px;
   
   position: absolute;
-  bottom: -25px;
+  bottom: -20px;
 }
 
 
@@ -437,4 +421,60 @@
   width: var(--pct, 0%);
   height: 100%;
   border-radius: 999px;
+}
+
+
+/*==== MAIN SECTION ====*/
+/* (Projects, contact pages) */
+
+.ss_work {
+  background-color: var(--second-color);
+  padding: var(--mg-5) var(--mg-4);
+}
+
+
+.ss_work h1 {
+  font-family: "Libre Baskerville", sans-serif;
+  color: var(--white-head);
+  font-size: 2.3rem;
+  line-height: 1.1;
+}
+
+
+.ss_work p {
+  font-family: "Outfit";
+  color: var(--first-color);
+  margin-top: var(--mg-4);
+  max-width: 46ch;
+}
+
+
+/*==== THE PROJECT SECTION ====*/
+.the_projects {
+  background: var(--first-color);
+  padding: var(--mg-5) var(--mg-4); 
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin-inline: auto;
+}
+
+
+.proj_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.3rem;
+}
+
+
+.proj_card {
+  background-color: var(--white-head);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--border-color);
+  overflow: hidden;
 }
