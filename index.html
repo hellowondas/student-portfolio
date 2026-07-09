@@ -11,28 +11,37 @@
   
 </head>
 <body>
-  <header class="header">
+  <!-- <header class="header">
     <nav class="nav_grid" aria-label="main navigation">
       <div class="logo_name">
         <a href="index.html">Samuel.Shielu</a>
       </div>
       
-      <!-- <ul class="nav_bar">
+      <ul class="nav_bar">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="planner.html">Planner</a></li>
         <li><a href="projects.html">Project</a></li>
         <li><a href="projects.html">Contact</a></li>
-      </ul> -->
-
+      </ul>
+  
       <button class="hamburger" aria-label="Open navigation menu">
         <i class="bx bx-menu"></i>
       </button>
     </nav>
     
-  </header>
+  </header> -->
 
-  
+  <div id="header-container"></div>
+  <script>
+    //For Header
+    fetch('./assets/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
+
   <main>
     <section class="welcome">
       <div class="my_intro">
@@ -56,7 +65,17 @@
     </section>
   </main>
   
-  <footer class="pages">
+  <div id="footer-container"></div>
+  <script>
+    //For Footer
+    fetch('./assets/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+  <!-- <footer class="pages">
     <div class="my_footer">
       <h3>Navigation</h3>
       <ul class="page_list">
@@ -67,35 +86,35 @@
           <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
-
+  
     <div class="wrap_socials">
       <h4>Connect</h4>
       <div class="in_socials">
         <a href="https://github.com/hellowondas" target="_blank" rel="noopener noreferrer" aria-label="Visit my github profile">
-
+  
         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-	        <path d="M0 0h24v24H0z" fill="none" />
-	        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-		      <path d="M3.5 15.668q.675.081 1 .618c.326.537 1.537 2.526 2.913 2.526H9.5m5.672-3.513q.823 1.078.823 1.936V21m-5.625-5.609q-.87.954-.869 1.813V21" />
-		      <path d="M15.172 15.299c1.202-.25 2.293-.682 3.14-1.316c1.448-1.084 2.188-2.758 2.188-4.411c0-1.16-.44-2.243-1.204-3.16c-.425-.511.819-3.872-.286-3.359c-1.105.514-2.725 1.198-3.574.947c-.909-.268-1.9-.416-2.936-.416c-.9 0-1.766.111-2.574.317c-1.174.298-2.296-.363-3.426-.848c-1.13-.484-.513 3.008-.849 3.422C4.921 7.38 4.5 8.44 4.5 9.572c0 1.653.895 3.327 2.343 4.41c.965.722 2.174 1.183 3.527 1.41" /></g>
+            <path d="M0 0h24v24H0z" fill="none" />
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <path d="M3.5 15.668q.675.081 1 .618c.326.537 1.537 2.526 2.913 2.526H9.5m5.672-3.513q.823 1.078.823 1.936V21m-5.625-5.609q-.87.954-.869 1.813V21" />
+            <path d="M15.172 15.299c1.202-.25 2.293-.682 3.14-1.316c1.448-1.084 2.188-2.758 2.188-4.411c0-1.16-.44-2.243-1.204-3.16c-.425-.511.819-3.872-.286-3.359c-1.105.514-2.725 1.198-3.574.947c-.909-.268-1.9-.416-2.936-.416c-.9 0-1.766.111-2.574.317c-1.174.298-2.296-.363-3.426-.848c-1.13-.484-.513 3.008-.849 3.422C4.921 7.38 4.5 8.44 4.5 9.572c0 1.653.895 3.327 2.343 4.41c.965.722 2.174 1.183 3.527 1.41" /></g>
         </svg>
       </a>
       
       <a href="https://linkedn.com" target="_blank" rel="noopener noreferrer" aria-label="visit my linkedn profile">
-
+  
         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-	      <path d="M0 0h24v24H0z" fill="none" />
-	      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-		    <circle cx="4" cy="4" r="2" />
-		    <path d="M2 9h4v12H2Zm20 12h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 12 0Z" /></g>
+          <path d="M0 0h24v24H0z" fill="none" />
+          <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <circle cx="4" cy="4" r="2" />
+          <path d="M2 9h4v12H2Zm20 12h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 12 0Z" /></g>
         </svg>
       </a>
-
+  
       <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Visit my twitter profile">
-
+  
         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-	      <path d="M0 0h24v24H0z" fill="none" />
-	      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 4.85c-.9.443-1.782.623-2.7.896c-1.009-1.145-2.505-1.208-3.942-.667C12.427 5.806 12 7.529 12 9.364c-2.92.075-5.521-1.262-7.2-3.618c0 0-3.764 6.723 3.6 9.95c-1.685 1.127-3.365 1.888-5.4 1.808c2.977 1.631 6.222 2.192 9.03 1.372c4.63-1.351 7.36-5.722 7.334-10.397c0-.225 1.359-2.506 1.636-3.629" />
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 4.85c-.9.443-1.782.623-2.7.896c-1.009-1.145-2.505-1.208-3.942-.667C12.427 5.806 12 7.529 12 9.364c-2.92.075-5.521-1.262-7.2-3.618c0 0-3.764 6.723 3.6 9.95c-1.685 1.127-3.365 1.888-5.4 1.808c2.977 1.631 6.222 2.192 9.03 1.372c4.63-1.351 7.36-5.722 7.334-10.397c0-.225 1.359-2.506 1.636-3.629" />
         </svg>
       </a>
       </div>
@@ -104,7 +123,7 @@
     <div class="author">
       <span> &copy; 2026 &middot Hellowondas</span>
     </div>
-  </footer>
+  </footer> -->
   <script src="main.js"></script>
 </body>
 </html>

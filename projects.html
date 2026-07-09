@@ -10,7 +10,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css">
 </head>
 <body>
-  <header></header>
+  <div id="header-container"></div>
+  <script>
+    //For Header
+    fetch('./assets/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
 
   <main class="main">
     <section class="ss_work">
@@ -75,5 +83,17 @@
         </div>
       </div>
     </section>
+  
   </main>
+  
+  <div id="footer-container"></div>
+  <script>
+    //For Footer
+    fetch('./assets/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+  <script src="main.js"></script>
 </body>
