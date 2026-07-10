@@ -12,14 +12,13 @@
 <body>
   <div id="header-container"></div>
   <script>
-    //For Header
+    // For Header
     fetch('./assets/header.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('header-container').innerHTML = data;
       });
   </script>
-
   <main class="main">
     <section class="ss_work">
       <div class="container">
@@ -27,7 +26,7 @@
         <p>A handful of projects I've built while learning - from simple to complex </p>
       </div>
     </section>
-    
+
     <section class="the_projects">
       <div class="container">
         <div class="proj_grid">
@@ -85,15 +84,18 @@
     </section>
   
   </main>
-  
+
   <div id="footer-container"></div>
   <script>
-    //For Footer
+    // For Footer
     fetch('./assets/footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer-container').innerHTML = data;
+        /* call function from main.js after header loads */
+        initApp();
       });
   </script>
-  <script src="main.js"></script>
+  <script src="./assets/main.js"></script>
 </body>
+</html>

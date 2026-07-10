@@ -12,14 +12,13 @@
 <body>
   <div id="header-container"></div>
   <script>
-    //For Header
+    // For Header
     fetch('./assets/header.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('header-container').innerHTML = data;
       });
   </script>
-
   <main>
     <section class="welcome1">
       <div class="my_intro1">
@@ -27,7 +26,7 @@
         <p>My educational journey, technical skill set and what drives me forward</p>
       </div>
     </section>
-    
+ 
     <section class="know_me">
       <div class="container">
         <div class="edu_bg">
@@ -48,7 +47,7 @@
               <p>Pursuing expertise in AI, scalable web architecture, and human-focused software development.</p>
             </div>
           </li>
-          
+
           <li class="timeline_item">
             <div class="timeline_dot" aria-hidden="true"></div>
             <div class="timeline_card">
@@ -59,8 +58,6 @@
               <p class="timeline_sub">Software Engineering</p>
               <p>C, Python, DevOps, MySQL.</p>
             </div>
-          
-          
           
           <li class="timeline_item">
             <div class="timeline_dot" aria-hidden="true"></div>
@@ -73,16 +70,15 @@
               <p>HTML, CSS, JavaScript.</p>
             </div>
           </li>
-  
         </ol>
       </div>
     </section>
-    
+
     <section class="my_skills">
       <div class="tech_skills">
         <h3>Technical Skills</h3>
       </div>
-      
+
       <ul class="the_skills" aria-label="skills proficency">
         <li class="skill">
           <div class="skill_row">
@@ -92,38 +88,36 @@
             <div class="skill_prg">
               <div class="skill_fill" style="--pct:94%"></div>
             </div>
-
           </div>
         </li>
-        
+
         <li class="skill">
           <div class="skill_row">
             <span class="skill_name">JavaScript</span>
             <span class="skill_pct">75%</span>
-            
+
             <div class="skill_prg">
               <div class="skill_fill" style="--pct:75%"></div>
             </div>
           </div>
         </li>
-        
+
         <li class="skill">
           <div class="skill_row">
             <span class="skill_name">React</span>
             <span class="skill_pct">85%</span>
-            
+
             <div class="skill_prg">
               <div class="skill_fill" style="--pct:85%"></div>
             </div>
-            
           </div>
         </li>
-        
+
         <li class="skill">
           <div class="skill_row">
             <span class="skill_name">Python</span>
             <span class="skill_pct">60%</span>
-            
+
             <div class="skill_prg">
               <div class="skill_fill" style="--pct:60%"></div>
             </div>
@@ -132,15 +126,17 @@
       </ul>
     </section>
   </main>
-  
   <div id="footer-container"></div>
   <script>
-    //For Footer
+    // For Footer
     fetch('./assets/footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer-container').innerHTML = data;
+        /* call function from main.js after header loads */
+        initApp();
       });
   </script>
+  <script src="./assets/main.js"></script>
 </body>
 </html>

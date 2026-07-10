@@ -19,13 +19,15 @@
   
   <div id="footer-container"></div>
   <script>
-    //For Footer
+    // For Footer
     fetch('./assets/footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer-container').innerHTML = data;
+        /* call function from main.js after header loads */
+        initApp();
       });
   </script>
-  <script src="main.js"></script>
+  <script src="./assets/main.js"></script>
 </body>
 </html>
