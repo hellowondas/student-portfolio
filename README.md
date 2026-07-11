@@ -1,7 +1,7 @@
 # CSC 106 - Student Academic Portfolio
 
 <div align="center">
-  <img src="./thumbnail.avi" alt="A Simple Student Portfolio" width="600"/>
+  <img src="./thumbnail.avi" alt="Student Portfolio" width="600"/>
 </div>
 
 ## 📋 Overview
@@ -25,6 +25,7 @@ The goal was to design a fully responisve, accessible and pixel-perfect multi-pa
 
 - HTML5
 - CSS3 (no frameworks)
+- JavaScript
 
 ## 📦 Getting Started
 

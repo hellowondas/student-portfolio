@@ -455,6 +455,7 @@
 
 
 /*==== THE PROJECT SECTION ====*/
+
 .the_projects {
   background: var(--first-color);
   padding: var(--mg-5) var(--mg-4); 
@@ -480,6 +481,36 @@
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  border: 2px solid var(--border-color);
+  border: 1px solid var(--border-color);
   overflow: hidden;
 }
+
+
+.project_img {
+  background-color: var(--second-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  aspect-ratio: 16/9;
+}
+
+
+.project_info {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.project_info h3 {
+  color: var(--second-color);
+  font-family: "Libre Baskerville", san-serif;
+  font-size: 1.3rem;
+  
+}
+
+.project_info p { font-family: "Outfit", san-serif; color: var(--body-color); }
+.link_btn { text-decoration: none; color: var(--body-color); }
