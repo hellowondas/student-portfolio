@@ -3,19 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <meta name="description" content="Portfolio of Samuel Shielu, a frontend developer and software engineering student showcasing projects and academic work.">
+  <title>Contact | Portfolio</title>
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css">
 </head>
 <body>
   <div id="header-container"></div>
   <script>
     // For Header
-    fetch('./header.html')
+    fetch('./assets/header.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('header-container').innerHTML = data;
       });
   </script>
+  
+  <main class="main">
+    <section class="ss_work">
+      <div class="container">
+        <h1>Let's connect</h1>
+        <p>Whether it's a collaboration, internship inquiry, or just a hello &mdash; my inbox is open. </p>
+      </div>
+    </section>
+    
+    
+    <section class="sect">
+      <div class="container">
+        <div class="contact_grid">
+          <div class="contact_info">
+            <h2>Contact Details</h2>
+            
+            <a class="info_card" href="mailto:samuelshielu@gmail.com">
+              
+              <span class="info_body">
+                <span class="info_label">EMAIL</span>
+                <span class="info_value">samuelshielu@gmail.com</span>
+              </span>
+            </a>
+
+            <a class="info_card" href="tel:+2348138621189">
+
+              <span class="info_body">
+                <span class="info_label">PHONE</span>
+                <span class="info_value">+2348138621189</span>
+              </span>
+            </a>
+
+            <div class="info_card">
+              <span class="info_body">
+                <span class="info_label">LOCATION</span>
+                <span class="info_value">Lagos State, Nigeria</span>
+              </span>
+            </div>
+          </div>
+
+          <form class="contact_form" id="contact-form" novalidate>
+            <h2>Send a Message</h2>
+
+            <div class="field">
+
+              <label for="c-name">NAME <span aria-hidden="true">*</span></label>
+              <input id="c-name" name="name" type="text" required aria-required="true" aria-describedby="c-name-err">
+
+              <p class="field_err" id="c-name-err" hidden>Please enter your name.</p>
+            </div>
+
+            <div class="field">
+
+              <label for="c-email">EMAIL <span aria-hidden="true">*</span></label>
+              <input id="c-email" name="email" type="email" required aria-required="true" aria-describedby="c-email-err">
+
+              <p class="field_err" id="c-email-err" hidden>Please enter a valid email.</p>
+            </div>
+
+            <div class="field">
+
+              <label for="c-phone">PHONE NUMBER</label>
+              <input id="c-phone" name="phone" type="tel">
+            </div>
+
+            <div class="field">
+  
+              <label for="c-message">MESSAGE <span aria-hidden="true">*</span></label>
+              <textarea id="c-message" name="message" rows="5" required aria-required="true" aria-describedby="c-message-err" placeholder="Tell me about your project, opportunity, or question..."></textarea>
+              <p class="field_err" id="c-message-err" hidden>Please write a short message.</p>
+            </div>
+
+            <button type="submit" class="button">
+              <span>Send message</span>
+            </button>
+
+            <p class="form_status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+        </div>
+      </div>
+      
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+  </main>
   
   
   

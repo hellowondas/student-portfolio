@@ -456,7 +456,7 @@
 
 /*==== THE PROJECT SECTION ====*/
 
-.the_projects {
+.sect {
   background: var(--first-color);
   padding: var(--mg-5) var(--mg-4); 
 }
