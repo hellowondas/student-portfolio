@@ -3,19 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <meta name="description" content="Portfolio of Samuel Shielu, a frontend developer and software engineering student showcasing projects and academic work.">
+  <title>Planner | Portfolio</title>
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css">
 </head>
 <body>
   <div id="header-container"></div>
   <script>
     //For Header
-    fetch('./header.html')
+    fetch('./assets/header.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('header-container').innerHTML = data;
       });
   </script>
+  
+  <main id="main">
+    <section class="ss_work">
+      <div class="container">
+        <h1>Daily Planner</h1>
+        <p>Capture tasks, tick them off, keep momentum. Everything is saved on your device. </p>
+      </div>
+    </section>
+
+    <section class="sect">
+      <div class="container">
+        <div class="planner_card">
+
+          <form class="planner_form" id="planner-form" novalidate>
+            
+            <label for="task-input"class="visually-hidden">new task</label>
+            <input
+              type="text"
+              id="task-input"
+              class="input"
+              placeholder="Add a task"
+              autocomplete="off"
+              maxlength="140"
+              required
+            >
+            <button  type="submit" class="button">
+              <i class="bx bx-plus" aria-hidden="true"></i>
+              <span>Add task</span>
+            </button>
+          </form>
+          
+          <div class="planner_toolbar">
+            <button>All</button>
+            <button>Active</button>
+            <button>Completed</button>
+          </div>
+
+          <ul></ul>
+          <p class="empty_state">
+            No task. Add one
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    
+  </main>
+  
+  
+  
+  
   
   <div id="footer-container"></div>
   <script>
