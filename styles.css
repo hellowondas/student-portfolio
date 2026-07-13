@@ -117,10 +117,7 @@
   padding: var(--mg-4);
 }
 
-  
-  
-  
-  
+
 .my_intro h1, 
 .my_intro1 h1 {
   font-family: "Libre Baskerville", sans-serif;
@@ -194,8 +191,10 @@
   background-color: var(--first-color);
   padding: var(--mg-4);
 }
-.my_skills { background: var(--second-bg); padding: var(--mg-4); }
-
+.my_skills { 
+  background: var(--second-bg); 
+  padding: 2rem;
+}
 
 
 .my_bio h2,
@@ -206,16 +205,19 @@
   font-family: "Libre Baskerville";
 }
 
+
 .my_bio h2 {
   font-size: 1.5rem;
   margin-top: var(--mg-4);
 }
+
 
 .edu_bg h2,
 .tech_skills h3 {
   font-size: 1.8rem;
   margin-top: var(--mg-2);
 }
+.tech_skills h3 {margin-bottom: 2rem;}
 
 
 .my_bio p {
@@ -379,17 +381,18 @@
 
 /*==== TECH SKILLS ====*/
 .the_skills {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
   list-style: none;
-  gap: 3rem;
-  margin-top: var(--mg-3);
+  margin-bottom: 1.5rem;
+  
 }
 
 .skill_row {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  
   position: relative;
 }
 
@@ -430,7 +433,7 @@
 
 
 /*==== MAIN SECTION ====*/
-/* (Projects, contact pages) */
+/* (Projects, ct pages) */
 
 .ss_work {
   background-color: var(--second-color);
@@ -462,7 +465,7 @@
 }
 
 
-.container {
+.iner {
   width: 100%;
   max-width: 1120px;
   margin-inline: auto;
@@ -514,3 +517,122 @@
 
 .project_info p { font-family: "Outfit", san-serif; color: var(--body-color); }
 .link_btn { text-decoration: none; color: var(--body-color); }
+
+
+/*==== CONTACT ====*/
+.contact_info h2 {
+  color: var(--second-color);
+  font-family: "Libre Baskerville";
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+}
+
+
+.contact_grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+
+.info_card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.9rem;
+  background: var(--second-bg);
+  padding: 1.2rem;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+
+.info_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.info_label {
+  color: var(--body-color);
+  font-family: "DM Mono", san-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+}
+.info_value { 
+  color: #111; 
+  font-family: "Outfit", san-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+
+.contact_form {
+  background-color: var(--white-head);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+
+.contact_form h2 {
+  color: var(--second-color);
+  font-family: "Libre Baskerville", san-serif;
+  font-size: 1.4rem;
+}
+.contact_form .field {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.field label {
+  color: var(--body-color);
+  font-family: "DM Mono", san-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+}
+.field input,
+.field textarea {
+  margin-top: 0.4rem;
+  background-color: var(--first-color);
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--body-color);
+  font-size: 1.1rem;
+}
+.field textarea { resize: vertical; min-height: 7.5rem; }
+
+textarea::placeholder {
+  font-size: 0.8rem;
+}
+
+.contact_form .button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+  background-color: var(--second-color);
+  color: var(--white-head);
+  padding: 0.8rem 1.8rem;
+  border: 1px solid var(--first-color);
+  border-radius: 0.4375rem;
+  text-decoration: none;
+  margin-top: 0.7rem;
+}
+
+.contact_form .button:hover {
+  background-color: var(--text-color);
+  color: var(--second-color);
+}
+/* 
+
+field textarea { resize: vertical; min-height: 120px; }
+.field.has-error input,
+.field.has-error textarea { border-color: #b22; }
+.field_err { color: #b22; font-size: 0.85rem; margin-top: 0.35rem; }
+.form_status { margin-top: 0.75rem; font-size: 0.9rem; min-height: 1.25rem; }
+.form_status.is-success { color: #1b6b3a; }
+.form_status.is-error { color: #b22; }
+
+
+*/
