@@ -38,7 +38,7 @@ body {
   color: var(--body-color);
   background: var(--first-color);
   padding-top: 3.125rem;
-  line-height: 1.5;
+  margin: 0;
 }
 
 .container {
@@ -138,10 +138,11 @@ textarea:focus-visible {
 }
 
 /*==== WELCOME SECTION ====*/
-.welcome, 
-.welcome1 {
+
+.welcome, .welcome1 {
   background-color: var(--second-color);
   padding: var(--mg-4);
+  margin-top: -3.125rem;
 }
 
 .my_intro h1, 
