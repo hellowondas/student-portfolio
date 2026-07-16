@@ -1,5 +1,4 @@
 function initApp() {
-  
   /* get the menu & the button */
   const navBar = document.getElementById("prim-nav");
   const navToggle = document.getElementById("nav-toggle");
@@ -25,6 +24,4 @@ function initApp() {
     }
   });
   
-  
 }
-

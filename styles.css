@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Outfit:wght@400;500;600;700&display=swap');
+
 
 * {
   margin: 0;
@@ -41,12 +42,14 @@ body {
   margin: 0;
 }
 
+
 .container {
   width: 100%;
-  max-width: 1120px;
+  max-width: 70rem;
   margin-inline: auto;
   padding: 0 1rem;
 }
+
 
 .visually-hidden {
   position: absolute !important;
@@ -55,6 +58,7 @@ body {
   overflow: hidden; clip: rect(0,0,0,0);
   white-space: nowrap; border: 0;
 }
+
 
 a { color: inherit; }
 a:focus-visible,
@@ -65,6 +69,7 @@ textarea:focus-visible {
   outline-offset: 2px;
 }
 
+
 /*==== HEADER SECTION ====*/
 .header {
   max-width: 100%;
@@ -72,6 +77,7 @@ textarea:focus-visible {
   background-color: var(--first-color);
   padding: var(--mg-3);
 }
+
 
 .nav_grid {
   display: flex;
@@ -88,6 +94,7 @@ textarea:focus-visible {
   background-color: var(--white-head);
 }
 
+
 .logo_name a {
   font-family: "Libre Baskerville";
   font-weight: 700;
@@ -95,6 +102,7 @@ textarea:focus-visible {
   color: var(--second-color);
   text-decoration: none;
 }
+
 
 .nav_bar {
   background: var(--white-head);
@@ -113,6 +121,7 @@ textarea:focus-visible {
   transition: transform 0.3s ease;
 }
 
+
 .nav_bar.opened { transform: translateX(0); }
 
 .nav_bar li {
@@ -122,12 +131,13 @@ textarea:focus-visible {
   margin: 1.25rem auto;
 }
 
+
 .nav_bar a {
   text-decoration: none;
   color: var(--second-color);
 }
-
 .nav_bar a.is-active { color: var(--text-color); }
+
 
 .hamburger {
   font-size: 2.3rem;
@@ -137,13 +147,15 @@ textarea:focus-visible {
   z-index: 10;
 }
 
-/*==== WELCOME SECTION ====*/
 
-.welcome, .welcome1 {
+/*==== WELCOME SECTION ====*/
+.welcome, 
+.welcome1 {
   background-color: var(--second-color);
   padding: var(--mg-4);
   margin-top: -3.125rem;
 }
+
 
 .my_intro h1, 
 .my_intro1 h1 {
@@ -155,11 +167,13 @@ textarea:focus-visible {
   line-height: 1.1;
 }
 
+
 .my_intro span {
   font-family: "Libre Baskerville", sans-serif;
   font-style: italic;
   color: var(--text-color);
 }
+
 
 .my_intro p,
 .my_intro1 p {
@@ -170,8 +184,8 @@ textarea:focus-visible {
   margin-top: 1.875rem;
 }
 
-.btn-wrapper { margin-top: 3.125rem; }
 
+.btn-wrapper { margin-top: 3.125rem; }
 .button {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -186,10 +200,12 @@ textarea:focus-visible {
   display: inline-block;
 }
 
+
 .button:hover {
   background-color: var(--text-color);
   color: var(--second-color);
 }
+
 
 /*==== BIOGRAPHY SECTION ====*/
 .biography, 
@@ -198,11 +214,13 @@ textarea:focus-visible {
   padding: var(--mg-4);
 }
 
+
 .biography {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
+
 
 .img_frame {
   width: 100%;
@@ -214,6 +232,7 @@ textarea:focus-visible {
   border: 1px solid var(--second-color);
 }
 
+
 .img_frame img {
   width: 100%;
   height: 100%;
@@ -221,31 +240,37 @@ textarea:focus-visible {
   display: block;
 }
 
+
 .my_skills { 
   background: var(--second-bg); 
   padding: 2rem;
 }
+
 
 .my_bio h2,
 .edu_bg h2,
 .tech_skills h3 {
   color: var(--second-color);
   line-height: 1.1;
-  font-family: "Libre Baskerville";
+  font-family: "Libre Baskerville", sans-serif;
 }
+
 
 .my_bio h2 {
   font-size: 1.5rem;
   margin-top: var(--mg-4);
 }
 
+
 .edu_bg h2,
 .tech_skills h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-top: var(--mg-2);
 }
 
+
 .tech_skills h3 { margin-bottom: 2rem; }
+
 
 .my_bio p {
   font-family: var(--body-font);
@@ -255,15 +280,18 @@ textarea:focus-visible {
   margin: 1rem 0;
 }
 
+
 /*==== FOOTER SECTION ====*/
 .pages {
   font-family: var(--body-font);
   background-color: var(--second-color);
   padding: var(--mg-4);
+
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
 }
+
 
 .my_footer h3 {
   font-family: "DM Mono", Outfit;
@@ -273,12 +301,14 @@ textarea:focus-visible {
   letter-spacing: 0.125rem;
 }
 
+
 .page_list {
   list-style-type: none;
   padding-left: 0;
   margin: 1.25rem 0 1.875rem 0;
   line-height: 1.8;
 }
+
 
 .page_list a { 
   text-decoration: none; 
@@ -287,6 +317,7 @@ textarea:focus-visible {
 
 .page_list a:hover { color: var(--text-color); }
 
+
 .wrap_socials h4 {
   font-family: "DM Mono", Outfit;
   color: var(--text-color);
@@ -294,11 +325,11 @@ textarea:focus-visible {
   letter-spacing: 0.06875rem;
 }
 
+
 .in_socials {
   display: flex;
   gap: 1rem;
 }
-
 .in_socials a {
   background-color: var(--btn-color);
   color: var(--first-color);
@@ -312,11 +343,11 @@ textarea:focus-visible {
   justify-content: center;
   align-items: center;
 }
-
 .in_socials a:hover {
   background-color: var(--text-color);
   color: var(--second-color);
 }
+
 
 .author {
   font-family: "DM Mono", Outfit;
@@ -327,6 +358,7 @@ textarea:focus-visible {
   grid-column: 1 / -1;
 }
 
+
 /*==== ABOUT.HTML PAGE ====*/
 .timeline {
   list-style: none;
@@ -334,6 +366,7 @@ textarea:focus-visible {
   padding-left: 1.5rem;
   margin-top: var(--mg-4);
 }
+
 
 .timeline::before {
   content: "";
@@ -345,10 +378,12 @@ textarea:focus-visible {
   width: 0.125rem;
 }
 
+
 .timeline_item {
   position: relative;
   margin-bottom: 1.5rem;
 }
+
 
 .timeline_dot {
   background-color: var(--first-color);
@@ -361,18 +396,21 @@ textarea:focus-visible {
   border-radius: 50%;
 }
 
+
 .timeline_item.is_current .timeline_dot {
   background-color: var(--text-color);
   border-color: var(--text-color);
 }
 
+
 .timeline_card {
   background-color: var(--second-bg);
   font-family: var(--body-font);
-  padding: 20px;
+  padding: 1.25rem;
   line-height: 1.8;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
+
 
 .timeline_meta .mono {
   font-family: "DM Mono", sans-serif;
@@ -380,27 +418,27 @@ textarea:focus-visible {
   color: var(--body-color);
 }
 
+
 .timeline_meta .tag {
   background-color: rgba(193,127,55,0.15);
   color: var(--text-color);
   padding: 0.15rem 0.5rem;
   border-radius: 0.25rem;
   font-size: 0.7rem;
-  font-family: "DM Mono";
+  font-family: "DM Mono", sans-serif;
   margin-left: 0.37rem;
 }
-
 .timeline_card h3 {
   font-weight: 700;
   font-size: 1.06rem;
 }
-
 .timeline_sub {
   color: var(--second-color);
   font-weight: 600;
 }
 
 .timeline_sub + p { line-height: 1.5; }
+
 
 /*==== TECH SKILLS ====*/
 .the_skills {
@@ -411,6 +449,7 @@ textarea:focus-visible {
   margin-bottom: 1.5rem;
 }
 
+
 .skill_row {
   display: flex;
   justify-content: flex-start;
@@ -418,29 +457,33 @@ textarea:focus-visible {
   position: relative;
 }
 
+
 .skill_pct {
   margin-left: auto;
-  font-family: "DM Mono";
+  font-family: "DM Mono", sans-serif;
   color: var(--body-color);
 } 
 
+
 .skill_name {
   color: #111;
-  font-weight: 600;
-  font-size: 1.24rem;
+  font-weight: 500;
+  font-size: 1.0625rem;
   font-family: "DM Mono", sans-serif;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.0375rem;
 }
+
 
 .skill_prg {
   background-color: var(--border-color);
-  height: 8px;
+  height: 0.5rem;
   width: 100%;
   overflow: hidden;
   border-radius: 999px;
   position: absolute;
-  bottom: -20px;
+  bottom: -1.25rem;
 }
+
 
 .skill_fill {
   background-color: var(--text-color);
@@ -449,11 +492,15 @@ textarea:focus-visible {
   border-radius: 999px;
 }
 
+
 /*==== MAIN SECTION ====*/
 .ss_work {
   background-color: var(--second-color);
   padding: var(--mg-5) var(--mg-4);
+  
+  margin-top: -3.125rem;
 }
+
 
 .ss_work h1 {
   font-family: "Libre Baskerville", sans-serif;
@@ -462,6 +509,7 @@ textarea:focus-visible {
   line-height: 1.1;
 }
 
+
 .ss_work p {
   font-family: "Outfit";
   color: var(--first-color);
@@ -469,17 +517,13 @@ textarea:focus-visible {
   max-width: 46ch;
 }
 
+
 /*==== PROJECT SECTION ====*/
 .sect {
   background: var(--first-color);
   padding: var(--mg-5) var(--mg-4); 
 }
 
-.iner {
-  width: 100%;
-  max-width: 1120px;
-  margin-inline: auto;
-}
 
 .proj_grid {
   display: grid;
@@ -487,14 +531,16 @@ textarea:focus-visible {
   gap: 1.3rem;
 }
 
+
 .proj_card {
   background-color: var(--white-head);
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   display: flex;
   flex-direction: column;
   border: 1px solid var(--border-color);
   overflow: hidden;
 }
+
 
 .project_img {
   background-color: var(--second-color);
@@ -506,6 +552,7 @@ textarea:focus-visible {
   aspect-ratio: 16/9;
 }
 
+
 .project_info {
   padding: 1.2rem;
   display: flex;
@@ -513,29 +560,34 @@ textarea:focus-visible {
   gap: 1rem;
 }
 
+
 .project_info h3 {
   color: var(--second-color);
   font-family: "Libre Baskerville", sans-serif;
   font-size: 1.3rem;
 }
 
+
 .project_info p { 
   font-family: "Outfit", sans-serif; 
   color: var(--body-color); 
 }
+
 
 .link_btn { 
   text-decoration: none; 
   color: var(--body-color); 
 }
 
+
 /*==== CONTACT ====*/
 .contact_info h2 {
   color: var(--second-color);
-  font-family: "Libre Baskerville";
+  font-family: "Libre Baskerville", sans-serif;
   margin-bottom: 1.2rem;
   font-size: 1.4rem;
 }
+
 
 .contact_grid {
   display: flex;
@@ -543,15 +595,17 @@ textarea:focus-visible {
   gap: 1.8rem;
 }
 
+
 .info_card {
   display: flex;
   align-items: center;
   margin-bottom: 0.9rem;
   background: var(--second-bg);
   padding: 1.2rem;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   text-decoration: none;
 }
+
 
 .info_body {
   display: flex;
@@ -560,12 +614,14 @@ textarea:focus-visible {
   gap: 0.4rem;
 }
 
+
 .info_label {
   color: var(--body-color);
   font-family: "DM Mono", sans-serif;
   font-size: 0.7rem;
   letter-spacing: 0.06em;
 }
+
 
 .info_value { 
   color: #111; 
@@ -574,12 +630,14 @@ textarea:focus-visible {
   font-size: 1rem;
 }
 
+
 .contact_form {
   background-color: var(--white-head);
-  border-radius: 12px;
+  border-radius: 0.75rem;
   padding: 1.5rem;
   border: 1px solid var(--border-color);
 }
+
 
 .contact_form h2 {
   color: var(--second-color);
@@ -587,12 +645,14 @@ textarea:focus-visible {
   font-size: 1.4rem;
 }
 
+
 .contact_form .field {
-  border-radius: 12px;
+  border-radius: 0.75rem;
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
 }
+
 
 .field label {
   color: var(--body-color);
@@ -601,29 +661,34 @@ textarea:focus-visible {
   letter-spacing: 0.06em;
 }
 
+
 .field input,
 .field textarea {
   margin-top: 0.4rem;
   background-color: var(--first-color);
   padding: 0.7rem 0.9rem;
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   color: var(--body-color);
   font-size: 1.1rem;
 }
+
 
 .field textarea { 
   resize: vertical; 
   min-height: 7.5rem; 
 }
 
+
 textarea::placeholder { font-size: 0.8rem; }
+
 
 .field input:focus,
 .field textarea:focus { 
   border: 2px solid var(--text-color); 
   outline: none; 
 }
+
 
 .contact_form .button,
 .planner_form .button {
@@ -640,11 +705,13 @@ textarea::placeholder { font-size: 0.8rem; }
   cursor: pointer;
 }
 
+
 .contact_form .button:hover,
 .planner_form .button:hover {
   background-color: var(--text-color);
   color: var(--second-color);
 }
+
 
 /*==== PLANNER ====*/
 .planner_form {
@@ -654,31 +721,35 @@ textarea::placeholder { font-size: 0.8rem; }
   gap: 0.9rem;
 }
 
+
 .planner_card {
   background-color: var(--white-head);
   border: 1px solid var(--border-color);
   box-shadow: 0 6px 20px rgba(29,52,97,0.06);
-  border-radius: 12px;
+  border-radius: 0.75rem;
   padding: 1.5rem;
 }
+
 
 .input {
   padding: 0.7rem 0.8rem;
   background-color: var(--first-color);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: 1px solid var(--border-color);
   font-size: 1rem;
   color: var(--body-color);
 }
 
-.input::placeholder { font-size: 0.9rem; }
 
+.input::placeholder { font-size: 0.9rem; }
 .input:focus { 
   border: 2px solid var(--text-color); 
   outline: none; 
 }
 
+
 .button span { letter-spacing: 0.09rem; }
+
 
 .planner_toolbar {
   display: flex;
@@ -688,6 +759,7 @@ textarea::placeholder { font-size: 0.8rem; }
   margin: 1rem 0;
   flex-wrap: wrap;
 }
+
 
 .planner_toolbar .chip {
   font-family: "DM Mono", sans-serif;
@@ -699,17 +771,20 @@ textarea::placeholder { font-size: 0.8rem; }
   cursor: pointer;
 }
 
+
 .chip.is-active {
   background-color: var(--second-color);
   color: var(--white-head);
   border-color: var(--second-color);
 }
 
+
 .task_list {
   list-style: none;
   display: grid;
   gap: 0.6rem;
 }
+
 
 .task {
   background-color: var(--first-color);
@@ -721,23 +796,27 @@ textarea::placeholder { font-size: 0.8rem; }
   gap: 1rem;
 }
 
+
 .task input[type="checkbox"] {
-  width: 20px; 
-  height: 20px;
+  width: 1.25rem; 
+  height: 1.25rem;
   cursor: pointer;
   flex-shrink: 0;
 }
+
 
 .task_text { 
   flex: 1; 
   word-break: break-word; 
 }
 
+
 .task.is-done .task_text { 
   text-decoration: line-through; 
   color: var(--body-color); 
   opacity: 0.6; 
 }
+
 
 .task_del {
   background: transparent;
@@ -746,13 +825,15 @@ textarea::placeholder { font-size: 0.8rem; }
   cursor: pointer;
   font-size: 1.25rem;
   padding: 0.25rem;
-  border-radius: 6px;
+  border-radius: 0.375rem;
 }
+
 
 .task_del:hover { 
   color: red; 
   background: rgba(178,34,34,0.08); 
 }
+
 
 .empty_state {
   text-align: center;
@@ -761,6 +842,7 @@ textarea::placeholder { font-size: 0.8rem; }
   padding: 1rem 0;
   font-style: italic;
 }
+
 
 .planner_footer {
   display: flex;
@@ -773,6 +855,7 @@ textarea::placeholder { font-size: 0.8rem; }
   gap: 0.5rem;
 }
 
+
 .clr_btn {
   background-color: var(--second-color);
   border: 1px solid var(--second-color);
@@ -781,20 +864,14 @@ textarea::placeholder { font-size: 0.8rem; }
   font-size: 0.7rem;
   cursor: pointer;
   padding: 0.6rem 0.4rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .link_btn.muted { color: var(--body-color); }
 
+
 /* ===== TABLET (768px - 1024px) ===== */
 @media (min-width: 768px) {
-  :root {
-    --big-fonts-size: 2.5rem;
-    --h2-font-size: 1.5rem;
-    --mg-4: 2.5rem;
-    --mg-5: 3rem;
-  }
-
  .logo_name {
     flex-shrink: 0;
   }
@@ -881,13 +958,6 @@ textarea::placeholder { font-size: 0.8rem; }
 
 /* ===== DESKTOP (1024px+) ===== */
 @media (min-width: 1024px) {
-  :root {
-    --big-fonts-size: 3rem;
-    --h2-font-size: 1.8rem;
-    --mg-4: 3rem;
-    --mg-5: 4rem;
-  }
-
   body {
     padding-top: 3.5rem;
   }
@@ -936,8 +1006,8 @@ textarea::placeholder { font-size: 0.8rem; }
   }
 
   .img_frame {
-    max-width: 300px;
-    min-width: 300px;
+    max-width: 18.75rem;
+    min-width: 18.75rem;
   }
 
   .my_bio h2 {
@@ -972,7 +1042,7 @@ textarea::placeholder { font-size: 0.8rem; }
   }
 
   .planner_card {
-    max-width: 900px;
+    max-width: 56.25rem;
     margin: 0 auto;
   }
 
@@ -981,10 +1051,11 @@ textarea::placeholder { font-size: 0.8rem; }
   }
 }
 
+
 /* ===== LARGE DESKTOP (1440px+) ===== */
 @media (min-width: 1440px) {
   .container {
-    max-width: 1320px;
+    max-width: 82.5rem;
   }
 
   .proj_grid {
