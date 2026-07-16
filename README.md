@@ -1,9 +1,5 @@
 # CSC 106 - Student Academic Portfolio
 
-<div align="center">
-  <img src="./design/Mobile_412px" alt="Student Portfolio" width="600"/>
-</div>
-
 ## 📋 Overview
 
 The goal was to design a fully responisve, accessible and pixel-perfect multi-page website that serves as a personal academic portfolio and student management platform using HTML, CSS, and JavaScript.
