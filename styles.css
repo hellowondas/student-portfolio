@@ -710,6 +710,8 @@ field textarea { resize: vertical; min-height: 120px; }
 
 .task_list {
   list-style: none;
+  display: grid;
+  gap: 0.6rem;
 }
 
 
@@ -724,8 +726,61 @@ field textarea { resize: vertical; min-height: 120px; }
 }
 
 .task input[type="checkbox"] {
-  width: 20px; height: 20px;
-  accent-color: var(--accent-color);
+  width: 20px; 
+  height: 20px;
+  color: var(--accent-color);
   cursor: pointer;
   flex-shrink: 0;
 }
+
+
+.task_text { flex: 1; word-break: break-word; }
+.task.is-done .task_text { text-decoration: line-through; color: var(--body-color); opacity: 0.6; }
+
+.task_del {
+  background: transparent;
+  border: 0;
+  color: var(--body-color);
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0.25rem;
+  border-radius: 6px;
+}
+
+
+.task_del:hover { color: red; background: rgba(178,34,34,0.08); }
+
+.empty_state {
+  text-align: center;
+  color: var(--body-color);
+  opacity: 0.7;
+  padding: 1rem 0;
+  font-style: italic;
+}
+
+
+.planner_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+
+.link_btn {
+  /* background: transparent; */
+  background-color: var(--second-color);
+  border: 1px solid var(--second-color);
+  color: var(--white-head);
+  font-family: "DM Mono", san-serif;
+  font-size: 0.7rem;
+  cursor: pointer;
+  padding: 0.6rem 0.4rem;
+  border-radius: 8px;
+  /*text-decoration: underline; */
+}
+.link_btn.muted { color: var(--body-color); }

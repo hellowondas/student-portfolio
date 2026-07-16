@@ -39,32 +39,35 @@
               type="text"
               id="task-input"
               class="input"
-              placeholder="Add a task"
+              placeholder="Add a new task here."
               autocomplete="off"
               maxlength="140"
               required
             >
             <button  type="submit" class="button">
               <i class="bx bx-plus" aria-hidden="true"></i>
-              <span>Add task</span>
+              <span>Add Task</span>
             </button>
           </form>
-          
-          <div class="planner_toolbar">
-            <button>All</button>
-            <button>Active</button>
-            <button>Completed</button>
+
+          <div class="planner_toolbar" aria-label="tab buttons">
+            <button class="chip is-active" role="tab" aria-pressed="true" data-filter="all">All</button>
+            <button class="chip" role="tab" aria-pressed="false" data-filter="active">Active</button>
+            <button class="chip" role="tab" aria-pressed="false"  data-filter="completed">Completed</button>
           </div>
 
-          <ul></ul>
-          <p class="empty_state">
-            No task. Add one
-          </p>
+          <ul class="task_list" id="task-list" aria-live="polite" aria-label="current tasks"></ul>
+          <p class="empty_state" id="empty-state" hidden>
+            No task. Add one</p>
+
+          <div class="planner_footer" >
+            <span id="task-count" class="mono">0 tasks</span>
+            <button type="button" class="link_btn" id="clear-completed">Clear completed</button>
+          </div>
         </div>
       </div>
     </section>
-    
-    
+
   </main>
   
   
@@ -83,5 +86,6 @@
       });
   </script>
   <script src="./assets/main.js"></script>
+  <script src="./assets/planner.js"></script>
 </body>
 </html>
