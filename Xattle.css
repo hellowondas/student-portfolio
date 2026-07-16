@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap');
 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
 :root {
-  /*=== COLORS ===*/
+    /*=== COLORS ===*/
   --first-color: #F9F7F3;
   --second-color: #1D3461;
   --text-color: #C17F37;
@@ -17,7 +19,7 @@
   --border-color: #E3DED4;
   --second-bg: #EEECE6;
   
-  /*=== TOPOGRAPHY ===*/
+   /*=== TOPOGRAPHY ===*/
   --body-font: "Outfit", sans-serif;
   --big-fonts-size: 2rem;
   --h2-font-size: 1.27rem;
@@ -33,38 +35,6 @@
 
 html { scroll-behavior: smooth; }
 
-body {
-  font-family: var(--body-font);
-  color: var(--body-color);
-  background: var(--first-color);
-  padding-top: 3.125rem;
-  line-height: 1.5;
-}
-
-.container {
-  width: 100%;
-  max-width: 1120px;
-  margin-inline: auto;
-  padding: 0 1rem;
-}
-
-.visually-hidden {
-  position: absolute !important;
-  width: 1px; height: 1px;
-  padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0,0,0,0);
-  white-space: nowrap; border: 0;
-}
-
-a { color: inherit; }
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-textarea:focus-visible {
-  outline: 2px solid var(--text-color);
-  outline-offset: 2px;
-}
-
 /*==== HEADER SECTION ====*/
 .header {
   max-width: 100%;
@@ -72,6 +42,7 @@ textarea:focus-visible {
   background-color: var(--first-color);
   padding: var(--mg-3);
 }
+
 
 .nav_grid {
   display: flex;
@@ -88,6 +59,7 @@ textarea:focus-visible {
   background-color: var(--white-head);
 }
 
+
 .logo_name a {
   font-family: "Libre Baskerville";
   font-weight: 700;
@@ -95,6 +67,7 @@ textarea:focus-visible {
   color: var(--second-color);
   text-decoration: none;
 }
+
 
 .nav_bar {
   background: var(--white-head);
@@ -110,7 +83,7 @@ textarea:focus-visible {
   top: 0;
   right: 0;
   transform: translateX(100%);
-  transition: transform 0.3s ease;
+  transition: transition 0.3s ease;
 }
 
 .nav_bar.opened { transform: translateX(0); }
@@ -122,18 +95,20 @@ textarea:focus-visible {
   margin: 1.25rem auto;
 }
 
+
 .nav_bar a {
   text-decoration: none;
   color: var(--second-color);
 }
 
+
 .nav_bar a.is-active { color: var(--text-color); }
+
 
 .hamburger {
   font-size: 2.3rem;
   border: none;
   background: var(--white-head);
-  cursor: pointer;
   z-index: 10;
 }
 
@@ -143,6 +118,7 @@ textarea:focus-visible {
   background-color: var(--second-color);
   padding: var(--mg-4);
 }
+
 
 .my_intro h1, 
 .my_intro1 h1 {
@@ -154,11 +130,13 @@ textarea:focus-visible {
   line-height: 1.1;
 }
 
+
 .my_intro span {
   font-family: "Libre Baskerville", sans-serif;
   font-style: italic;
   color: var(--text-color);
 }
+
 
 .my_intro p,
 .my_intro1 p {
@@ -168,6 +146,7 @@ textarea:focus-visible {
   line-height: 1.5rem;
   margin-top: 1.875rem;
 }
+
 
 .btn-wrapper { margin-top: 3.125rem; }
 
@@ -181,28 +160,16 @@ textarea:focus-visible {
   border: 1px solid var(--first-color);
   border-radius: 0.4375rem;
   text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
 }
+
 
 .button:hover {
   background-color: var(--text-color);
   color: var(--second-color);
 }
 
+
 /*==== BIOGRAPHY SECTION ====*/
-.biography, 
-.know_me {
-  background-color: var(--first-color);
-  padding: var(--mg-4);
-}
-
-.biography {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
 .img_frame {
   width: 100%;
   max-width: 15.625rem;
@@ -220,10 +187,17 @@ textarea:focus-visible {
   display: block;
 }
 
+
+.biography, 
+.know_me {
+  background-color: var(--first-color);
+  padding: var(--mg-4);
+}
 .my_skills { 
   background: var(--second-bg); 
   padding: 2rem;
 }
+
 
 .my_bio h2,
 .edu_bg h2,
@@ -233,36 +207,37 @@ textarea:focus-visible {
   font-family: "Libre Baskerville";
 }
 
+
 .my_bio h2 {
   font-size: 1.5rem;
   margin-top: var(--mg-4);
 }
+
 
 .edu_bg h2,
 .tech_skills h3 {
   font-size: 1.8rem;
   margin-top: var(--mg-2);
 }
+.tech_skills h3 {margin-bottom: 2rem;}
 
-.tech_skills h3 { margin-bottom: 2rem; }
 
 .my_bio p {
   font-family: var(--body-font);
   font-size: var(--mg-2);
   color: var(--body-color);
   line-height: 1.5;
-  margin: 1rem 0;
+  margin: 1rem 0 1rem 0;
 }
+
 
 /*==== FOOTER SECTION ====*/
 .pages {
   font-family: var(--body-font);
   background-color: var(--second-color);
   padding: var(--mg-4);
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
 }
+
 
 .my_footer h3 {
   font-family: "DM Mono", Outfit;
@@ -272,6 +247,7 @@ textarea:focus-visible {
   letter-spacing: 0.125rem;
 }
 
+
 .page_list {
   list-style-type: none;
   padding-left: 0;
@@ -279,12 +255,10 @@ textarea:focus-visible {
   line-height: 1.8;
 }
 
-.page_list a { 
-  text-decoration: none; 
-  color: var(--first-color); 
-}
 
-.page_list a:hover { color: var(--text-color); }
+.page_list a { text-decoration: none; color: var(--first-color); }
+.page_list a:hover {color: var(--text-color);}
+
 
 .wrap_socials h4 {
   font-family: "DM Mono", Outfit;
@@ -292,6 +266,7 @@ textarea:focus-visible {
   text-transform: uppercase;
   letter-spacing: 0.06875rem;
 }
+
 
 .in_socials {
   display: flex;
@@ -307,15 +282,18 @@ textarea:focus-visible {
   margin-top: 0.9375rem;
   border-radius: 50%;
   text-decoration: none;
+  
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.in_socials a:hover {
+
+.in_socials a:hover{
   background-color: var(--text-color);
   color: var(--second-color);
 }
+
 
 .author {
   font-family: "DM Mono", Outfit;
@@ -323,17 +301,18 @@ textarea:focus-visible {
   color: var(--first-color);
   text-align: center;
   margin-top: var(--mg-4);
-  grid-column: 1 / -1;
 }
 
+
 /*==== ABOUT.HTML PAGE ====*/
+
+/*==== EDU BACKGROUND ====*/
 .timeline {
   list-style: none;
   position: relative;
   padding-left: 1.5rem;
   margin-top: var(--mg-4);
 }
-
 .timeline::before {
   content: "";
   background-color: var(--border-color);
@@ -344,11 +323,11 @@ textarea:focus-visible {
   width: 0.125rem;
 }
 
+
 .timeline_item {
   position: relative;
   margin-bottom: 1.5rem;
 }
-
 .timeline_dot {
   background-color: var(--first-color);
   border: 2px solid var(--border-color);
@@ -360,11 +339,11 @@ textarea:focus-visible {
   border-radius: 50%;
 }
 
+
 .timeline_item.is_current .timeline_dot {
   background-color: var(--text-color);
   border-color: var(--text-color);
 }
-
 .timeline_card {
   background-color: var(--second-bg);
   font-family: var(--body-font);
@@ -378,7 +357,6 @@ textarea:focus-visible {
   font-size: var(--smaller-font-size);
   color: var(--body-color);
 }
-
 .timeline_meta .tag {
   background-color: rgba(193,127,55,0.15);
   color: var(--text-color);
@@ -389,17 +367,19 @@ textarea:focus-visible {
   margin-left: 0.37rem;
 }
 
+
 .timeline_card h3 {
   font-weight: 700;
   font-size: 1.06rem;
 }
 
+
 .timeline_sub {
   color: var(--second-color);
   font-weight: 600;
 }
-
 .timeline_sub + p { line-height: 1.5; }
+
 
 /*==== TECH SKILLS ====*/
 .the_skills {
@@ -408,6 +388,7 @@ textarea:focus-visible {
   gap: 2.8rem;
   list-style: none;
   margin-bottom: 1.5rem;
+  
 }
 
 .skill_row {
@@ -416,6 +397,7 @@ textarea:focus-visible {
   align-items: center;
   position: relative;
 }
+
 
 .skill_pct {
   margin-left: auto;
@@ -426,10 +408,11 @@ textarea:focus-visible {
 .skill_name {
   color: #111;
   font-weight: 600;
-  font-size: 1.24rem;
+  font-size: 1.24;
   font-family: "DM Mono", sans-serif;
   letter-spacing: 0.6px;
 }
+
 
 .skill_prg {
   background-color: var(--border-color);
@@ -437,9 +420,11 @@ textarea:focus-visible {
   width: 100%;
   overflow: hidden;
   border-radius: 999px;
+  
   position: absolute;
   bottom: -20px;
 }
+
 
 .skill_fill {
   background-color: var(--text-color);
@@ -448,11 +433,15 @@ textarea:focus-visible {
   border-radius: 999px;
 }
 
+
 /*==== MAIN SECTION ====*/
+/* (Projects, ct pages) */
+
 .ss_work {
   background-color: var(--second-color);
   padding: var(--mg-5) var(--mg-4);
 }
+
 
 .ss_work h1 {
   font-family: "Libre Baskerville", sans-serif;
@@ -461,6 +450,7 @@ textarea:focus-visible {
   line-height: 1.1;
 }
 
+
 .ss_work p {
   font-family: "Outfit";
   color: var(--first-color);
@@ -468,11 +458,14 @@ textarea:focus-visible {
   max-width: 46ch;
 }
 
-/*==== PROJECT SECTION ====*/
+
+/*==== THE PROJECT SECTION ====*/
+
 .sect {
   background: var(--first-color);
   padding: var(--mg-5) var(--mg-4); 
 }
+
 
 .iner {
   width: 100%;
@@ -480,11 +473,13 @@ textarea:focus-visible {
   margin-inline: auto;
 }
 
+
 .proj_grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.3rem;
 }
+
 
 .proj_card {
   background-color: var(--white-head);
@@ -494,6 +489,7 @@ textarea:focus-visible {
   border: 1px solid var(--border-color);
   overflow: hidden;
 }
+
 
 .project_img {
   background-color: var(--second-color);
@@ -505,6 +501,7 @@ textarea:focus-visible {
   aspect-ratio: 16/9;
 }
 
+
 .project_info {
   padding: 1.2rem;
   display: flex;
@@ -512,21 +509,17 @@ textarea:focus-visible {
   gap: 1rem;
 }
 
+
 .project_info h3 {
   color: var(--second-color);
-  font-family: "Libre Baskerville", sans-serif;
+  font-family: "Libre Baskerville", san-serif;
   font-size: 1.3rem;
+  
 }
 
-.project_info p { 
-  font-family: "Outfit", sans-serif; 
-  color: var(--body-color); 
-}
+.project_info p { font-family: "Outfit", san-serif; color: var(--body-color); }
+.link_btn { text-decoration: none; color: var(--body-color); }
 
-.link_btn { 
-  text-decoration: none; 
-  color: var(--body-color); 
-}
 
 /*==== CONTACT ====*/
 .contact_info h2 {
@@ -536,11 +529,13 @@ textarea:focus-visible {
   font-size: 1.4rem;
 }
 
+
 .contact_grid {
   display: flex;
   flex-direction: column;
   gap: 1.8rem;
 }
+
 
 .info_card {
   display: flex;
@@ -552,26 +547,26 @@ textarea:focus-visible {
   text-decoration: none;
 }
 
+
 .info_body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 0.4rem;
 }
-
 .info_label {
   color: var(--body-color);
-  font-family: "DM Mono", sans-serif;
+  font-family: "DM Mono", san-serif;
   font-size: 0.7rem;
   letter-spacing: 0.06em;
 }
-
 .info_value { 
   color: #111; 
-  font-family: "Outfit", sans-serif;
+  font-family: "Outfit", san-serif;
   font-weight: 500;
   font-size: 1rem;
 }
+
 
 .contact_form {
   background-color: var(--white-head);
@@ -580,26 +575,24 @@ textarea:focus-visible {
   border: 1px solid var(--border-color);
 }
 
+
 .contact_form h2 {
   color: var(--second-color);
-  font-family: "Libre Baskerville", sans-serif;
+  font-family: "Libre Baskerville", san-serif;
   font-size: 1.4rem;
 }
-
 .contact_form .field {
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
 }
-
 .field label {
   color: var(--body-color);
-  font-family: "DM Mono", sans-serif;
+  font-family: "DM Mono", san-serif;
   font-size: 0.7rem;
   letter-spacing: 0.06em;
 }
-
 .field input,
 .field textarea {
   margin-top: 0.4rem;
@@ -610,19 +603,12 @@ textarea:focus-visible {
   color: var(--body-color);
   font-size: 1.1rem;
 }
-
-.field textarea { 
-  resize: vertical; 
-  min-height: 7.5rem; 
-}
+.field textarea { resize: vertical; min-height: 7.5rem; }
 
 textarea::placeholder { font-size: 0.8rem; }
-
 .field input:focus,
-.field textarea:focus { 
-  border: 2px solid var(--text-color); 
-  outline: none; 
-}
+.field textarea:focus { border: 2px solid var(--text-color); outline: none; }
+
 
 .contact_form .button,
 .planner_form .button {
@@ -636,7 +622,6 @@ textarea::placeholder { font-size: 0.8rem; }
   border-radius: 0.4375rem;
   text-decoration: none;
   margin-top: 0.7rem;
-  cursor: pointer;
 }
 
 .contact_form .button:hover,
@@ -645,14 +630,27 @@ textarea::placeholder { font-size: 0.8rem; }
   color: var(--second-color);
 }
 
+/* 
+field textarea { resize: vertical; min-height: 120px; }
+.field.has-error input,
+.field.has-error textarea { border-color: #b22; }
+.field_err { color: #b22; font-size: 0.85rem; margin-top: 0.35rem; }
+.form_status { margin-top: 0.75rem; font-size: 0.9rem; min-height: 1.25rem; }
+.form_status.is-success { color: #1b6b3a; }
+.form_status.is-error { color: #b22; }
+
+
+*/
+
+
 /*==== PLANNER ====*/
 .planner_form {
   display: flex;
   flex-direction: column;
-  font-family: "Outfit", sans-serif;
+  font-family: "Outfit", san-serif;
   gap: 0.9rem;
+  /*flex-wrap: wrap;*/
 }
-
 .planner_card {
   background-color: var(--white-head);
   border: 1px solid var(--border-color);
@@ -671,13 +669,20 @@ textarea::placeholder { font-size: 0.8rem; }
 }
 
 .input::placeholder { font-size: 0.9rem; }
+.input:focus { border: 2px solid var(--text-color); outline: none; }
 
-.input:focus { 
-  border: 2px solid var(--text-color); 
-  outline: none; 
-}
 
 .button span { letter-spacing: 0.09rem; }
+
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  white-space: nowrap; border: 0;
+}
+
 
 .planner_toolbar {
   display: flex;
@@ -685,30 +690,32 @@ textarea::placeholder { font-size: 0.8rem; }
   align-items: center;
   gap: 0.7rem;
   margin: 1rem 0;
-  flex-wrap: wrap;
 }
 
+
 .planner_toolbar .chip {
-  font-family: "DM Mono", sans-serif;
+  font-family: "DM Mono", san-serif;
   font-size: 0.7rem;
   background-color: var(--first-color);
   border: 1px solid var(--border-color);
   padding: 0.5rem 0.7rem;
   border-radius: 1rem;
-  cursor: pointer;
 }
+
 
 .chip.is-active {
   background-color: var(--second-color);
   color: var(--white-head);
-  border-color: var(--second-color);
+  border: var(--second-color);
 }
+
 
 .task_list {
   list-style: none;
   display: grid;
   gap: 0.6rem;
 }
+
 
 .task {
   background-color: var(--first-color);
@@ -723,20 +730,14 @@ textarea::placeholder { font-size: 0.8rem; }
 .task input[type="checkbox"] {
   width: 20px; 
   height: 20px;
+  color: var(--accent-color);
   cursor: pointer;
   flex-shrink: 0;
 }
 
-.task_text { 
-  flex: 1; 
-  word-break: break-word; 
-}
 
-.task.is-done .task_text { 
-  text-decoration: line-through; 
-  color: var(--body-color); 
-  opacity: 0.6; 
-}
+.task_text { flex: 1; word-break: break-word; }
+.task.is-done .task_text { text-decoration: line-through; color: var(--body-color); opacity: 0.6; }
 
 .task_del {
   background: transparent;
@@ -748,10 +749,8 @@ textarea::placeholder { font-size: 0.8rem; }
   border-radius: 6px;
 }
 
-.task_del:hover { 
-  color: red; 
-  background: rgba(178,34,34,0.08); 
-}
+
+.task_del:hover { color: red; background: rgba(178,34,34,0.08); }
 
 .empty_state {
   text-align: center;
@@ -760,6 +759,7 @@ textarea::placeholder { font-size: 0.8rem; }
   padding: 1rem 0;
   font-style: italic;
 }
+
 
 .planner_footer {
   display: flex;
@@ -772,35 +772,24 @@ textarea::placeholder { font-size: 0.8rem; }
   gap: 0.5rem;
 }
 
+
 .clr_btn {
   background-color: var(--second-color);
   border: 1px solid var(--second-color);
   color: var(--white-head);
-  font-family: "DM Mono", sans-serif;
+  font-family: "DM Mono", san-serif;
   font-size: 0.7rem;
   cursor: pointer;
   padding: 0.6rem 0.4rem;
   border-radius: 8px;
 }
-
 .link_btn.muted { color: var(--body-color); }
 
-/* ===== TABLET (768px - 1024px) ===== */
+
+
 @media (min-width: 768px) {
-  :root {
-    --big-fonts-size: 2.5rem;
-    --h2-font-size: 1.5rem;
-    --mg-4: 2.5rem;
-    --mg-5: 3rem;
-  }
-
-  .nav_grid { 
-    padding: 0 2rem; 
-  }
-
-  .hamburger { 
-    display: none; 
-  }
+  .nav_grid { padding: 0 2rem; }
+  .hamburger { display: none; }
   
   .nav_bar {
     position: static;
@@ -812,173 +801,50 @@ textarea::placeholder { font-size: 0.8rem; }
     padding: 0;
     box-shadow: none;
   }
+  .nav_bar li { margin: 0 0 0 1.5rem; font-size: 1rem; }
 
-  .nav_bar li { 
-    margin: 0 0 0 1.5rem; 
-    font-size: 1rem; 
-  }
-
-  .welcome, .biography, .sect, .ss_work, .pages { 
-    padding-left: 3rem; 
-    padding-right: 3rem; 
-  }
-
-  .my_intro h1, .my_intro1 h1 {
-    font-size: 2.8rem;
-    max-width: 100%;
-  }
-
-  .biography {
-    flex-direction: row;
-    align-items: center;
-    gap: 3rem;
-  }
-
-  .img_frame {
-    max-width: 250px;
-    flex-shrink: 0;
-  }
-
-  .proj_grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .contact_grid {
-    flex-direction: row;
-    gap: 3rem;
-  }
-
-  .contact_info {
-    flex: 1;
-  }
-
-  .contact_form {
-    flex: 1;
-  }
-
-  .pages {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-  }
-
-  .author {
-    grid-column: 1 / -1;
-  }
-
-  .planner_toolbar {
-    gap: 1rem;
-  }
+  .welcome, .biography, .section, .page_hero, .pages { padding-left: 3rem; padding-right: 3rem; }
 }
 
-/* ===== DESKTOP (1024px+) ===== */
+
+
+
+
+
+/* @media (min-width: 768px) {
+  .nav_grid { padding: 0 32px; }
+  .hamburger { display: none; }
+  .nav_bar {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    background: transparent;
+    height: auto;
+    width: auto;
+    max-width: none;
+    padding: 0;
+    box-shadow: none;
+  }
+  .nav_bar li { margin: 0 0 0 1.5rem; font-size: 1rem; }
+
+  .welcome, .biography, .section, .page_hero, .pages { padding-left: 3rem; padding-right: 3rem; }
+
+  .my_intro h1 { font-size: 3rem; max-width: none; }
+  .page_hero h1 { font-size: 3rem; }
+
+  .bio_grid { grid-template-columns: 220px 1fr; align-items: center; gap: 2.5rem; }
+  .bio_placeholder { width: 220px; height: 220px; }
+
+  .value_grid { grid-template-columns: repeat(3, 1fr); }
+  .project_grid { grid-template-columns: repeat(2, 1fr); }
+  .contact_grid { grid-template-columns: 1fr 1.2fr; align-items: start; }
+
+  .footer_grid { grid-template-columns: 1fr 1fr 1fr; align-items: start; }
+  .copyright { text-align: right; }
+}
+
 @media (min-width: 1024px) {
-  :root {
-    --big-fonts-size: 3rem;
-    --h2-font-size: 1.8rem;
-    --mg-4: 3rem;
-    --mg-5: 4rem;
-  }
-
-  body {
-    padding-top: 3.5rem;
-  }
-
-  .container {
-    padding: 0 2rem;
-  }
-
-  .nav_grid {
-    padding: 0 3rem;
-    height: 3.5rem;
-  }
-
-  .logo_name a {
-    font-size: 1.8rem;
-  }
-
-  .nav_bar li {
-    font-size: 1.1rem;
-    margin: 0 0 0 2rem;
-  }
-
-  .welcome, .ss_work {
-    padding: 4rem 3rem;
-  }
-
-  .my_intro h1, .my_intro1 h1 {
-    font-size: 3.5rem;
-    max-width: 100%;
-    line-height: 1.2;
-  }
-
-  .my_intro p, .my_intro1 p {
-    font-size: 1.1rem;
-    max-width: 60ch;
-  }
-
-  .biography {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 4rem;
-  }
-
-  .img_frame {
-    max-width: 300px;
-    min-width: 300px;
-  }
-
-  .my_bio h2 {
-    font-size: 2rem;
-  }
-
-  .proj_grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
-
-  .project_img {
-    font-size: 4rem;
-  }
-
-  .contact_grid {
-    flex-direction: row;
-    gap: 4rem;
-  }
-
-  .contact_info {
-    flex: 1;
-  }
-
-  .contact_form {
-    flex: 1;
-  }
-
-  .pages {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 4rem;
-  }
-
-  .planner_card {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  .the_skills {
-    gap: 3rem;
-  }
-}
-
-/* ===== LARGE DESKTOP (1440px+) ===== */
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1320px;
-  }
-
-  .proj_grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .pages {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
+  .my_intro h1 { font-size: 3.5rem; }
+  .page_hero h1 { font-size: 3.5rem; }
+  .project_grid { grid-template-columns: repeat(3, 1fr); }
+} */
