@@ -30,6 +30,9 @@
   --mg-4: 2rem;
   --mg-5: 2.5rem;
   --mg-6: 3rem;
+  
+  /* remove blue touches on button clicks */
+  -webkit-tap-highlight-color: transparent;
 }
 
 html { scroll-behavior: smooth; }
